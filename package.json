@@ -13,6 +13,6 @@
   "devDependencies": {
     "dotenv": "^18.0.9",
     "node-pg-migrate": "^9.0.0",
-    "pg": "^8.23.1"
+    "pg": "catalog:"
   }
 }
