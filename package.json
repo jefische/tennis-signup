@@ -7,6 +7,12 @@
     "dev": "pnpm --filter \"./apps/*\" --parallel dev",
     "build": "pnpm -r build",
     "typecheck": "pnpm -r typecheck",
-    "lint": "pnpm -r lint"
+    "lint": "pnpm -r lint",
+    "migrate": "node-pg-migrate -m db/migrations -j sql"
+  },
+  "devDependencies": {
+    "dotenv": "^18.0.9",
+    "node-pg-migrate": "^9.0.0",
+    "pg": "^8.23.1"
   }
 }
